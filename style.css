@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root{
+    --rosa: #fadce4;
+    --bege: #fff5f6;
+    --branco: #f8f9fe;
+    --azul: #dfddf2;
+    --lilas: #aba1c6;
+}
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 50px auto 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: linear-gradient(to right, #f8f9fe, #fadce4, #aba1c6);;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: #6e0469;
+}
+
+header{
+    font-size: 100px;
+    color: var(--lilas);
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.8),
+        -1px -1px 2px rgba(255, 255, 255, 0.8);
+    transition: .4s ease;
+}
+
+#botao {
+    background-color: var(--bege);
+    font-size: larger;
+    padding: 32px 50px;
+    border-radius: 2rem;
+    font-size: 30px;
+    border: solid var(--rosa);
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: .2s;
+}
+
+#botao:hover {
+    background-color: var(--azul);
+    color: #6e045c;
+    border: solid var(--lilas);
+    transform: scalel(1.2);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 20px;
+}
+
+.area-editavel {
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    background-color: var(--bege);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color:#8f5a5a;
+    border: solid var(--rosa);
+    resize: vertical;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.area-editavel:focus {
+    border-color: var(--lilas);
+    box-shadow: 0 2px 8px #5f5677(92, 82, 87, 0.3);
+    outline: none;
+}
+
+.area-editavel label {
+  font-size: 1.2rem;
+  color:#8f5a5a;
+}
+
+.botao-checkbox {
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: var(--bege);
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: solid var(--rosa);
+    cursor: pointer;
+    color: #6e1d04;
+    margin-bottom: 40px;
+    transition: .2s;
+}
+
+.botao-checkbox:hover {
+  background-color: var(--azul);
+  color: #6e045c;
+  border: solid var(--lilas);
+}
+
+.botao-excluir{ 
+    margin-left: 14rem;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #6e1d04;
+    background-color: var(--branco);
+    border-radius: 50%;
+    border: solid var(--rosa);
+    padding: 5px 10px;
+    cursor: pointer;
+    align-items: end;
+    transition: .3s;
+}
+
+.botao-excluir:hover{
+    background-color: var(--bege);
+    color: #a08278;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 70px;
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+
+    #botao {
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+
+    .container {
+        margin-left: 10px;
+    }
+
+    .area-editavel {
+        align-content: center;
+        width: 90%;
+        min-height: 150px; 
+        font-size: 1rem;
+    }
+
+    .area-editavel label {
+        font-size: 1rem;
+      }
+
+    .botao-excluir {
+        margin-left: 0; 
+        margin-top: 10px;
+    }
+}
